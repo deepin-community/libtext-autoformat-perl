@@ -1,0 +1,29 @@
+Source: libtext-autoformat-perl
+Maintainer: Debian Perl Group <pkg-perl-maintainers@lists.alioth.debian.org>
+Uploaders: Niko Tyni <ntyni@iki.fi>,
+           gregor herrmann <gregoa@debian.org>,
+           Salvatore Bonaccorso <carnil@debian.org>
+Section: perl
+Testsuite: autopkgtest-pkg-perl
+Priority: optional
+Build-Depends: debhelper-compat (= 12)
+Build-Depends-Indep: libtext-reform-perl,
+                     perl
+Standards-Version: 4.4.0
+Vcs-Browser: https://salsa.debian.org/perl-team/modules/packages/libtext-autoformat-perl
+Vcs-Git: https://salsa.debian.org/perl-team/modules/packages/libtext-autoformat-perl.git
+Homepage: https://metacpan.org/release/Text-Autoformat
+Rules-Requires-Root: no
+
+Package: libtext-autoformat-perl
+Architecture: all
+Depends: libtext-reform-perl,
+         ${misc:Depends},
+         ${perl:Depends}
+Description: module for automatic text wrapping and reformatting
+ Text::Autoformat provides intelligent formatting of plain text without the
+ need for any kind of embedded mark-up. The module recognizes Internet
+ quoting conventions, a wide range of bullet and number schemes, centered
+ text, and block quotations, and reformats each appropriately. Other options
+ allow the user to adjust inter-word and inter-paragraph spacing, justify
+ text, and impose various capitalization schemes.

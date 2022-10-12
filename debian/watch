@@ -1,0 +1,5 @@
+version=4
+# other indexing problem, filed as CPAN#35814.
+https://cpan.metacpan.org/authors/id/D/DC/DCONWAY/Text-Autoformat-v?@ANY_VERSION@@ARCHIVE_EXT@
+opts=uversionmangle=s/\.\d{2}$/$&0000/ \
+https://metacpan.org/release/Text-Autoformat   .*/Text-Autoformat-v?@ANY_VERSION@@ARCHIVE_EXT@
